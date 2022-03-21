@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="javascript/scripts.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="leftbg">
+      <div class="logobg">
+        <div class="logo"></div>
+      </div>
+    </div>
+    <div class="entireform">
+      <header>
+        <p>
+          This is not a real website. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Ut sed aliquet nibh. Mauris pretium neque a egestas
+          sodales.
+        </p>
+        <p>Sign up <i>now</i> to get started!</p>
+        <p>You <i>know</i> you want to.</p>
+      </header>
+      <form action="" method="post" class="signup">
+        <div class="whitebg">
+          <div class="formrow">
+            <p>Let's do this!</p>
+          </div>
+          <div class="cols">
+            <div class="formcolone">
+              <label for="firstname">First Name</label>
+              <input type="text" name="firstname" id="firstname" required />
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required />
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" required />
+            </div>
+            <div class="formcoltwo">
+              <label for="lastname">Last Name</label>
+              <input type="text" name="lastname" id="lastname" required />
+              <label for="phone">Phone Number</label>
+              <input
+                type="number"
+                name="phone"
+                id="phone"
+                pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+                title="Please enter a valid phone number, example: 1234567890"
+                required
+              />
+              <label for="confirm">Confirm Password</label>
+              <input type="password" name="cofirm" id="confirm" required />
+            </div>
+          </div>
+        </div>
+        <div class="errormsg">* Passwords do not match</div>
+        <div class="submit">
+          <button type="submit">Create Account</button>
+        </div>
+      </form>
+      <p>
+        Already have an account?
+        <a href="http://" target="_blank" rel="noopener noreferrer">Log in!</a>
+      </p>
+    </div>
+  </body>
+</html>
